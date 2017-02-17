@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SPI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller='FormationCtrl'>
+
+    <div id="wrapper">
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Enseignants</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Fiche Complète de l'Enseignant</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">
+                                                N° Enseignant
+                                            </th>
+                                            <th rowspan="2">
+                                                Nom 
+                                            </th>
+                                            <th rowspan="2">
+                                                Prenom
+                                            </th>
+                                            <th rowspan="2">
+                                                Sexe
+                                            </th>
+                                            <th rowspan="2">
+                                                Type
+                                            </th>
+                                            <th rowspan="2">
+                                                Adresse
+                                            </th>
+                                            <th rowspan="2">
+                                                Ville
+                                            </th>
+                                            <th colspan="4">
+                                                Contact
+                                            </th>                 
+                                            <th></th>                                           
+                                        </tr>
+                                        <tr>
+                                         <th> Email Perso </th>
+                                         <th> Email UBO </th>
+                                         <th> Telephone </th>
+                                         <th> Mobile </th>
+                                         <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                                                              
+                                        <tr>
+                                            <th>{{Ens.noEnseignant}}</th>
+                                            <td contenteditable="true">{{Ens.nom}} </td>
+                                            <td contenteditable="true">{{Ens.prenom}}</td>
+                                            <td contenteditable="true">{{Ens.sexe}}</td>
+                                            <td contenteditable="true">{{Ens.type}}</td>
+                                            <td contenteditable="true">{{Ens.adresse}}</td>
+                                            <td contenteditable="true">{{Ens.ville}}</td>
+                                            <td contenteditable="true">{{Ens.emailPerso}}</td>
+                                            <td contenteditable="true">{{Ens.emailUbo}}</td>
+                                            <td contenteditable="true">{{Ens.telephone}}</td>
+                                            <td contenteditable="true">{{Ens.mobile}}</td>
+                                            <td><a href="#/enseignants"><i class="fa fa-check fa-fw"></i></a></td>
+                                        </tr>                                     
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Cliquer sur la case pour modifier les informations</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
